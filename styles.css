@@ -1,0 +1,72 @@
+
+p, form, span, div {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+	position: relative; 
+	margin: 0; 
+	padding: 0;
+	background-color: #FF3333;
+}
+
+/* Website logo */ 
+h1, h2 {
+	font-family: 'Pacifico', cursive;
+	/*margin-bottom:0px;*/
+	color: #FF3333;
+}
+
+/* DIVS */
+
+div {
+	background-color: #FFCCCC;
+	position:relative;
+    overflow:auto;
+}
+
+.col { margin:20px; padding: 20px; }
+.popup { padding: 20px; }
+
+#timeline { margin-top:15px; }
+.entry { margin-bottom:15px; }
+
+.col, .entry, .popup  {
+    border-color: black;
+	border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+}
+
+.wide-col { margin-left:0; margin-right:0; }
+.narrow-col { text-align:center; }
+
+-done .word-cloud {	margin-bottom:20px; }
+
+/* For wide screens */
+@media screen and (min-width: 1000px) {
+	.wide-col { width:60%; left:20%; }
+	.narrow-col { width:30%; left:35%; }
+}
+
+/* For narrow screens */
+@media screen and (min-width: 560px) and (max-width: 1000px)  {
+	.wide-col { width:90%; left:2%;  }
+	.narrow-col { width:36%; left:32%; }
+}
+
+/* For extra narrow screens */
+@media screen and (max-width: 560px) {
+	.wide-col { width:98%; padding:0; }
+	.narrow-col { width:36%; left:32%; }
+	.top-line { font-size:0.5em; }
+	.word-cloud { font-size: 10px; }
+}
+
+
+a { 
+	color:red; 
+	text-decoration:underline; 
+	cursor: pointer;
+}
+
